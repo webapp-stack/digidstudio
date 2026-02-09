@@ -69,12 +69,12 @@ export default function Home() {
       code: 'class KulinaStore {\n  constructor() {\n    this.inventory = new FirebaseDB();\n    this.payment = new Stripe();\n  }\n}'
     },
     {
-      title: 'Kriya Booth',
-      description: 'Sistem manajemen booth interaktif dengan integrasi Kommo CRM',
-      category: 'Business Tools',
-      tech: ['React', 'Kommo', 'Botpress'],
-      code: 'const BoothManager = {\n  booking: new KommoCRM(),\n  aiChat: new BotpressBot(),\n  analytics: realTimeDashboard\n};'
-    }
+  title: 'Digital Booth Ecosystem', 
+  description: 'Sistem manajemen event interaktif yang mengotomatisasi pendataan pengunjung langsung ke Kommo CRM.',
+  category: 'Event Tech',
+  tech: ['React', 'Kommo', 'Botpress'],
+  code: 'const DigitalBooth = {\n  leadCapture: true,\n  crmIntegration: "Kommo",\n  aiAssistant: "Botpress"\n};'
+}
   ];
 
   const codeSnippets = [
@@ -106,8 +106,8 @@ const deliverables = {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
               <img
-                src="/logo-digid-studio.png"
-                alt="Digid Studio Logo"
+                src="/logo-digid.png"
+                alt="Digid Studio"
                 className="h-11.25 w-auto"
                 style={{ height: '45px' }}
               />
@@ -494,14 +494,14 @@ const deliverables = {
                   </a>
 
                   <a
-                    href="mailto:hello@digidstudio.com"
+                    href="mailto:tri@digidstudio.com"
                     className="flex flex-col items-center text-center p-4 rounded-lg border border-white/10 hover:border-white/20 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-3 group-hover:scale-110 transition-transform" style={{ backgroundColor: '#39FF1414' }}>
                       <Mail className="w-6 h-6" style={{ color: '#39FF14' }} />
                     </div>
                     <span className="text-sm font-medium mb-1">Email</span>
-                    <span className="text-xs text-gray-500">hello@digidstudio.com</span>
+                    <span className="text-xs text-gray-500">tri@digidstudio.com</span>
                   </a>
 
                   <div className="flex flex-col items-center text-center p-4 rounded-lg border border-white/10">
@@ -523,22 +523,34 @@ const deliverables = {
         <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <img
-                  src="/logo-digid-studio.png"
-                  alt="Digid Studio Logo"
-                  className="h-11.25 w-auto"
-                  style={{ height: '45px' }}
-                />
-              </div>
-              <p className="text-gray-400 mb-4 max-w-md">
-                Engineering Digital Excellence since 2012. Specializing in Firebase, Kommo CRM, and Botpress AI.
-              </p>
-              <p className="text-sm text-gray-600">
-                © {new Date().getFullYear()} Digid Studio. All rights reserved.
-              </p>
-            </div>
-            <div>
+  <div className="flex items-center gap-2 mb-4">
+    <img
+      src="/logo-digid.png"
+      alt="Digid Studio Logo"
+      className="w-auto"
+      style={{ height: '45px' }}
+    />
+  </div>
+  <p className="text-gray-400 mb-4 max-w-md">
+    Engineering Digital Excellence since 2012. Specializing in Firebase, Kommo CRM, and Botpress AI.
+  </p>
+  <div className="flex flex-col gap-1">
+    <p className="text-sm text-gray-600">
+      © {new Date().getFullYear()} Digid Studio. All rights reserved.
+    </p>
+    <p className="text-sm text-gray-600">
+      <span className="opacity-50">|</span> Member of{' '}
+      <a 
+        href="https://asetsakinah.web.id" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-gray-500 hover:text-[#39FF14] transition-colors decoration-dotted underline underline-offset-4"
+      >
+        Aset Sakinah
+      </a>
+    </p>
+  </div>
+</div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><a href="#About" className="text-sm text-gray-400 hover:text-white transition-colors">About</a></li>
